@@ -3,4 +3,5 @@ export const colors = {
   primaryText: '#1F1C1C',
   primarySubTitle: '#8E8E8E',
   secondaryText: '#33CD39',
+  buttonActive: '#8E8E8E',
 };

@@ -20,7 +20,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     font-family: "Inter", sans-serif;
     background-color: ${colors.background};
-    color: ${colors.primaryTitle};
+    color: ${colors.primaryText};
     font-weight: 400;
     font-size: 16px;
     min-width: 320px;

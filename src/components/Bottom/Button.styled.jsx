@@ -14,12 +14,26 @@ export const StyledButton = styled.button`
   font-style: normal;
   font-weight: 500;
   line-height: 22px;
-  
-  ${device.tablet} {
-    //margin-top: 182px;
+  max-width: 256px;
+
+  &:hover {
+    background: ${colors.secondaryText};
+    color: ${colors.background};
+    cursor: pointer;
   }
+
+  &:active {
+    background: ${colors.buttonActive};
+    border: 3px solid ${colors.buttonActive};
+    color: ${colors.background};
+    cursor: pointer;
+  }
+
+  ${device.tablet} {
+
+  }
+
   ${device.desktop} {
-    //margin-top: 0;
-    //justify-content: space-between;
+
   }
 `;

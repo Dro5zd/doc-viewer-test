@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import mainImg from '../../assets/images/bg-main.jpg';
-import { device } from '../../styles/mixins';
-import { colors } from '../../styles/colors';
+import {device} from '../../styles/mixins';
+import {colors} from '../../styles/colors';
 import undline from '../../assets/icons/undline-long.svg';
 import undlineShort from '../../assets/icons/undline-short.svg';
 
@@ -9,12 +9,8 @@ export const MainContent = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
-  //margin-bottom: 120px;
-  //margin-top: 80px;
-  
-  ${device.tablet} {
-    //margin-top: 182px;
-  }
+  margin-top: 80px;
+
   ${device.desktop} {
     margin-top: 0;
     justify-content: space-between;
@@ -25,24 +21,20 @@ export const LeftSide = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 496px;
-  //gap: 32px;
-  //margin-top: 182px;
+  margin-bottom: 40px;
 
   ${device.desktop} {
-    //margin-left: 120px;
     align-items: flex-start;
     justify-content: flex-start;
-    //margin-top: 60px;
     margin-left: 80px;
-    margin-bottom: auto;
   }
 `;
 
 export const RightSide = styled.div`
- 
- 
+
   ${device.desktop} {
     display: flex;
     min-width: 0;
@@ -62,28 +54,21 @@ export const RightSide = styled.div`
       bottom: 248px;
       right: 68px;
     }
-    
+
     &:after {
       content: url(${undline});
       position: absolute;
       bottom: 98px;
       left: -50px;
     }
-    
-    //padding: 20px;
-    //height: calc(100vh - 200px);
-    //justify-content: center;
-  }
-  ${device.limited} {
-    //padding-left: 20vw;
-  }
-  ${device.wide} {
-    //margin: auto 0 auto 118px;
+
   }
 `;
 
 export const TitleWrapper = styled.div`
   text-align: center;
+  margin-bottom: 40px;
+
   ${device.desktop} {
     width: 400px;
     text-align: left;
@@ -98,12 +83,12 @@ export const Title = styled.h1`
   line-height: 120%;
   margin-bottom: 16px;
   color: ${colors.primaryText};
-  
+
   ${device.tablet} {
     font-size: 32px;
     line-height: 38.4px;
-  } 
-  
+  }
+
   ${device.desktop} {
     text-align: left;
   }
@@ -118,25 +103,28 @@ export const TitleAccent = styled.span`
   &:after {
     content: url(${undline});
     position: absolute;
-    top: 16px;
-    left: 8px;
+    top: 71px;
+    left: -193px;
   }
 
-${device.tablet} {
-  font-size: 32px;
-  line-height: 38.4px;
-}
+  ${device.tablet} {
+    font-size: 32px;
+    line-height: 38.4px;
+
+    &:after {
+      content: url(${undline});
+      position: absolute;
+      top: 16px;
+      left: 8px;
+    }
+  }
 `;
 
 export const SubTitle = styled.p`
-  //width: 496px;
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
   color: ${colors.primarySubTitle};
- 
-
-  
 
   ${device.tablet} {
     font-size: 16px;

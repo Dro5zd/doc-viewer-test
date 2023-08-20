@@ -1,10 +1,10 @@
 import React from 'react';
-import { StyledButton } from './Button.styled';
+import {StyledButton} from './Button.styled';
 
 export const Button = () => {
-  return (
-    <>
-      <StyledButton>Розпочати зараз</StyledButton>
-    </>
-  );
+    return (
+        <>
+            <StyledButton>Розпочати зараз</StyledButton>
+        </>
+    );
 };
